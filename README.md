@@ -10,31 +10,51 @@ Manually analyzing Arabic text reviews is challenging due to:
 To develop an **automated system** using machine learning for efficient sentiment classification of Arabic reviews.
 
 ### **Objectives**
+
 ✅ **Develop Automation:** Build a system for Arabic sentiment analysis.
+
 ✅ **Handle Complexity:** Address linguistic challenges like morphology and text directionality.
+
 ✅ **Improve Accuracy:** Apply advanced ML models for better sentiment classification.
+
 ✅ **Facilitate Decision-Making:** Provide insights for customer satisfaction improvement.
+
 ✅ **Scale Analysis:** Enable efficient processing of large datasets.
+
 
 ---
 
 ## 🔄 Sentiment Analysis Pipeline
+
 📌 **Steps:**
+
 1. **Data Acquisition** → Preprocessing → Normalization
+
 2. **Feature Extraction (TF-IDF)** → Tokenization & Stemming → Lemmatization
+
 3. **Feature Classification** → Naive Bayes - Random Forest - Logistic Regression
+
 4. **Model Evaluation** → Handle Imbalanced Data → Performance Metrics
+
 
 ---
 
 ## 📂 Data Acquisition
+
 - **Source:** Kaggle
+
 - **Content:** Arabic-language reviews from various companies.
+
 - **Features:**
+
   - **Review Text:** The main content.
+
   - **Rating:** Categorized as Positive (1), Neutral (0), Negative (-1).
+
   - **Company:** The reviewed company.
+
 - **Volume:** 40,046 reviews.
+
 
 📌 **Word Cloud Analysis**: A visual representation was created to highlight the most common words.
 
@@ -43,43 +63,68 @@ To develop an **automated system** using machine learning for efficient sentimen
 ---
 
 ## 🔧 Data Preprocessing
+
 ✅ **Drop Null Values:** Ensures meaningful data inputs.
+
 ✅ **Remove Duplicates:** Reduces bias in training.
+
 ✅ **Emoji Removal:** Cleans text for better NLP processing.
+
 ✅ **Punctuation & Stop Words Removal:** Enhances feature extraction.
+
 ✅ **Tokenization:** Breaks text into meaningful units.
+
 ✅ **Normalization (Stemming & Lemmatization):** Simplifies text representation.
+
 
 ---
 
 ## 📊 Feature Extraction
+
 ✅ **Technique:** TF-IDF Vectorization
+
 ✅ **Components:**
+
 - **TF (Term Frequency):** Measures word occurrence.
+
 - **IDF (Inverse Document Frequency):** Highlights rare words.
+
 ✅ **Purpose:** Converts textual data into numerical features for ML.
+
 
 ---
 
 ## 🤖 Machine Learning Models
+
 Three models were built and evaluated:
 
+
 1. **Random Forest** - Ensemble method improving accuracy and stability.
+
 2. **Multinomial Naïve Bayes** - Probability-based model for text classification.
+
 3. **Logistic Regression** - Efficient classification with one-vs-rest strategy.
+
 
 ---
 
 ## 🔍 Hyperparameter Tuning
+
 ✅ **Method Used:** GridSearchCV
+
 ✅ **Purpose:** Optimizes model parameters via:
+
 - Systematic Exploration
+
 - Cross-Validation
+
 ✅ **Goal:** Improve accuracy and prevent overfitting.
+
 
 ---
 
 ## 📈 Performance Metrics
+
 ![](images/2.png)
 
 ![](images/3.png)
@@ -96,6 +141,7 @@ Three models were built and evaluated:
 ✅ **Effect:**
 
 - Generates synthetic samples for minority classes.
+
 - Balances class distribution for improved performance.
 
 # Performance Metrics After Applying SMOTE
@@ -130,12 +176,16 @@ Three models were built and evaluated:
 
 
 ✅ **Findings:**
+
 - Random Forest outperformed other models with **88% accuracy**.
+
 - SMOTE significantly improved classification balance.
+
 
 ---
 
 ## 🎯 Example Predictions
+
 ✔️ **Comment:** "وصلني الطعام متأخرا والاكل بارد" → **Predicted Label:** Negative
 
 ✔️ **Comment:** "أفضل تطبيق" → **Predicted Label:** Positive
@@ -145,6 +195,7 @@ Three models were built and evaluated:
 ---
 
 ## 📌 Project Strengths
+
 ✅ **High Accuracy:** Achieved **88% accuracy** in sentiment classification.
 
 ✅ **Data Imbalance Handling:** SMOTE effectively balanced class distribution.
@@ -156,6 +207,7 @@ Three models were built and evaluated:
 ---
 
 ## ⚠️ Limitations
+
 ❌ **Dialectal Variations:** Struggled with diverse Arabic dialects.
 
 ❌ **Limited Lexical Resources:** Need for richer Arabic sentiment lexicons.
