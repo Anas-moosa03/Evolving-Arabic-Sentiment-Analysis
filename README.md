@@ -81,33 +81,53 @@ Three models were built and evaluated:
 
 ## 📈 Performance Metrics
 ![](images/2.png)
+
 ![](images/3.png)
+
 ![](images/4.png)
+
 
 🔴 **Challenge:** Imbalanced dataset affecting classification performance.
 
 📌 **Handling Data Imbalance (SMOTE)**
+
 ✅ **Technique Used:** Synthetic Minority Oversampling (SMOTE)
+
 ✅ **Effect:**
+
 - Generates synthetic samples for minority classes.
 - Balances class distribution for improved performance.
 
 # Performance Metrics After Applying SMOTE
+
 ![](images/5.png)
+
 ![](images/6.png)
+
 ![](images/7.png)
 
+
 #Confusion Matrix
+
 ![](images/8.png)
+
 ![](images/9.png)
+
 ![](images/10.png)
+
 
 ---
 
 ## 📊 Visualization of Results
 
+# ROC Curves
+
 ![](images/12.png)
+
+# Training and Validation Error vs. Number of Trees
+
 ![](images/13.png)
+
 
 ✅ **Findings:**
 - Random Forest outperformed other models with **88% accuracy**.
