@@ -38,7 +38,7 @@ To develop an **automated system** using machine learning for efficient sentimen
 
 📌 **Word Cloud Analysis**: A visual representation was created to highlight the most common words.
 
-📷 *(Insert Word Cloud Image Here)*
+![Word Cloud](images/1.png)
 
 ---
 
@@ -80,7 +80,9 @@ Three models were built and evaluated:
 ---
 
 ## 📈 Performance Metrics
-📷 *(Insert Model Results Images Here)*
+![](images/2.png)
+![](images/3.png)
+![](images/4.png)
 
 🔴 **Challenge:** Imbalanced dataset affecting classification performance.
 
@@ -90,15 +92,22 @@ Three models were built and evaluated:
 - Generates synthetic samples for minority classes.
 - Balances class distribution for improved performance.
 
-📷 *(Insert Performance Metrics After Applying SMOTE)*
-📷 *(Insert Confusion Matrices After Applying SMOTE)*
+# Performance Metrics After Applying SMOTE
+![](images/5.png)
+![](images/6.png)
+![](images/7.png)
+
+#Confusion Matrix
+![](images/8.png)
+![](images/9.png)
+![](images/10.png)
 
 ---
 
 ## 📊 Visualization of Results
-📷 *(Insert Learning Curve for Random Forest)*
-📷 *(Insert ROC Curves for Models)*
-📷 *(Insert Training & Validation Error vs. Number of Trees)*
+
+![](images/12.png)
+![](images/13.png)
 
 ✅ **Findings:**
 - Random Forest outperformed other models with **88% accuracy**.
@@ -108,23 +117,31 @@ Three models were built and evaluated:
 
 ## 🎯 Example Predictions
 ✔️ **Comment:** "وصلني الطعام متأخرا والاكل بارد" → **Predicted Label:** Negative
+
 ✔️ **Comment:** "أفضل تطبيق" → **Predicted Label:** Positive
+
 ✔️ **Comment:** "مش عارف" → **Predicted Label:** Neutral
 
 ---
 
 ## 📌 Project Strengths
 ✅ **High Accuracy:** Achieved **88% accuracy** in sentiment classification.
+
 ✅ **Data Imbalance Handling:** SMOTE effectively balanced class distribution.
+
 ✅ **Comprehensive Preprocessing:** Extensive NLP techniques improved model performance.
+
 ✅ **Visualization Tools:** Word clouds, pie charts, and plots enhanced insights.
 
 ---
 
 ## ⚠️ Limitations
 ❌ **Dialectal Variations:** Struggled with diverse Arabic dialects.
+
 ❌ **Limited Lexical Resources:** Need for richer Arabic sentiment lexicons.
+
 ❌ **Processing Complexity:** Arabic preprocessing added computational cost.
+
 
 ---
 
