@@ -144,7 +144,7 @@ Three models were built and evaluated:
 
 - Balances class distribution for improved performance.
 
-# Performance Metrics After Applying SMOTE
+## Performance Metrics After Applying SMOTE
 
 ![](images/5.png)
 
@@ -153,7 +153,7 @@ Three models were built and evaluated:
 ![](images/7.png)
 
 
-#Confusion Matrix
+### Confusion Matrix
 
 ![](images/8.png)
 
@@ -166,11 +166,11 @@ Three models were built and evaluated:
 
 ## 📊 Visualization of Results
 
-# ROC Curves
+### ROC Curves
 
 ![](images/12.png)
 
-# Training and Validation Error vs. Number of Trees
+### Training and Validation Error vs. Number of Trees
 
 ![](images/13.png)
 
